@@ -1,13 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ApiTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-30T10:14:16" hostname="TestVagrants-MacBook-Pro.local" time="1.624">
+<testsuite name="ApiTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-30T11:19:04" hostname="TestVagrants-MacBook-Pro.local" time="1.814">
   <properties/>
-  <testcase name="saveUser" classname="ApiTests" time="1.624"/>
+  <testcase name="getAllUsers" classname="ApiTests" time="1.814"/>
   <system-out><![CDATA[{
-    "id": 17528,
-    "name": "Jayanthi",
-    "email": "jayanthi@gmail.com",
-    "gender": "female",
-    "status": "active"
+    "meta": {
+        "pagination": {
+            "total": 4548,
+            "pages": 455,
+            "page": 1,
+            "limit": 10,
+            "links": {
+                "previous": null,
+                "current": "https://gorest.co.in/public/v1/users?page=1",
+                "next": "https://gorest.co.in/public/v1/users?page=2"
+            }
+        }
+    },
+    "data": [
+        {
+            "id": 4930,
+            "name": "Miss Jagdish Ganaka",
+            "email": "jagdish_ganaka_miss@effertz.net",
+            "gender": "male",
+            "status": "active"
+        },
+        {
+            "id": 4914,
+            "name": "Sarvin Gill",
+            "email": "gill_sarvin@runolfsson.name",
+            "gender": "male",
+            "status": "active"
+        },
+        {
+            "id": 4913,
+            "name": "Dr. Suryakanta Bandopadhyay",
+            "email": "bandopadhyay_suryakanta_dr@kunze.co",
+            "gender": "male",
+            "status": "inactive"
+        },
+        {
+            "id": 4912,
+            "name": "Chandni Joshi",
+            "email": "chandni_joshi@jerde.name",
+            "gender": "female",
+            "status": "active"
+        },
+        {
+            "id": 4911,
+            "name": "Yogendra Bhattacharya",
+            "email": "bhattacharya_yogendra@gusikowski.co",
+            "gender": "male",
+            "status": "active"
+        },
+        {
+            "id": 4910,
+            "name": "Bhagvan Joshi",
+            "email": "joshi_bhagvan@hirthe.info",
+            "gender": "female",
+            "status": "active"
+        },
+        {
+            "id": 4909,
+            "name": "Sheela Kaniyar",
+            "email": "sheela_kaniyar@koch.net",
+            "gender": "male",
+            "status": "inactive"
+        },
+        {
+            "id": 4908,
+            "name": "Rageswari Ahluwalia",
+            "email": "rageswari_ahluwalia@von.name",
+            "gender": "male",
+            "status": "active"
+        },
+        {
+            "id": 4907,
+            "name": "Bhaanumati Shah",
+            "email": "bhaanumati_shah@macgyver-willms.io",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 4906,
+            "name": "Bhadra Chattopadhyay",
+            "email": "bhadra_chattopadhyay@wilkinson.name",
+            "gender": "female",
+            "status": "active"
+        }
+    ]
 }
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

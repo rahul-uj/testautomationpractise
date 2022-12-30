@@ -1,7 +1,99 @@
 {
-    "id": 17528,
-    "name": "Jayanthi",
-#    "email": "jayanthi@gmail.com",
-    "gender": "female",
-    "status": "active"
+    "meta": {
+        "pagination": {
+            "total": 4548,
+            "pages": 455,
+            "page": 1,
+            "limit": 10,
+            "links": {
+"                "previous": null,
+J                "current": "https://gorest.co.in/public/v1/users?page=1",
+F                "next": "https://gorest.co.in/public/v1/users?page=2"
+            }
+
+        }
+    },
+    "data": [
+
+        {
+            "id": 4930,
++            "name": "Miss Jagdish Ganaka",
+8            "email": "jagdish_ganaka_miss@effertz.net",
+            "gender": "male",
+            "status": "active"
+        },
+
+        {
+            "id": 4914,
+#            "name": "Sarvin Gill",
+4            "email": "gill_sarvin@runolfsson.name",
+            "gender": "male",
+            "status": "active"
+        },
+
+        {
+            "id": 4913,
+3            "name": "Dr. Suryakanta Bandopadhyay",
+<            "email": "bandopadhyay_suryakanta_dr@kunze.co",
+            "gender": "male",
+!            "status": "inactive"
+        },
+
+        {
+            "id": 4912,
+%            "name": "Chandni Joshi",
+1            "email": "chandni_joshi@jerde.name",
+             "gender": "female",
+            "status": "active"
+        },
+
+        {
+            "id": 4911,
+-            "name": "Yogendra Bhattacharya",
+<            "email": "bhattacharya_yogendra@gusikowski.co",
+            "gender": "male",
+            "status": "active"
+        },
+
+        {
+            "id": 4910,
+%            "name": "Bhagvan Joshi",
+2            "email": "joshi_bhagvan@hirthe.info",
+             "gender": "female",
+            "status": "active"
+        },
+
+        {
+            "id": 4909,
+&            "name": "Sheela Kaniyar",
+0            "email": "sheela_kaniyar@koch.net",
+            "gender": "male",
+!            "status": "inactive"
+        },
+
+        {
+            "id": 4908,
++            "name": "Rageswari Ahluwalia",
+5            "email": "rageswari_ahluwalia@von.name",
+            "gender": "male",
+            "status": "active"
+        },
+
+        {
+            "id": 4907,
+'            "name": "Bhaanumati Shah",
+;            "email": "bhaanumati_shah@macgyver-willms.io",
+             "gender": "female",
+!            "status": "inactive"
+        },
+
+        {
+            "id": 4906,
+,            "name": "Bhadra Chattopadhyay",
+<            "email": "bhadra_chattopadhyay@wilkinson.name",
+             "gender": "female",
+            "status": "active"
+
+        }
+    ]
 }

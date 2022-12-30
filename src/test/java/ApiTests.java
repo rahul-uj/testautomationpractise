@@ -1,4 +1,5 @@
 import io.restassured.http.ContentType;
+import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
@@ -8,9 +9,11 @@ public class ApiTests {
     public void getAllUsers() {
         given()
                 .when()
-                    .get("https://gorest.co.in/public/v2/users")
+                    .get("https://gorest.co.in/public/v1/users")
                 .then()
                     .statusCode(200)
+                .body("data", Matchers.hasSize(10))
+                .body("data",Matchers.hasItem(Matchers.hasEntry("gender","male")))
                     .log().body();
     }
 
@@ -22,16 +25,18 @@ public class ApiTests {
                 .header("Authorization","Bearer f71a00fb0610866efbd24ef6b398a488e1ec69958a34886ad59a9710f7d0729d")
                 .body("{\n" +
                         "    \"id\": 0,\n" +
-                        "    \"name\": \"Jayanthi\",\n" +
-                        "    \"email\": \"jayanthi@gmail.com\",\n" +
-                        "    \"gender\": \"female\",\n" +
+                        "    \"name\": \"Rahul\",\n" +
+                        "    \"email\": \"rahul11@gmail.com\",\n" +
+                        "    \"gender\": \"male\",\n" +
                         "    \"status\": \"active\"\n" +
                         "}")
                 .when()
-                .post("https://gorest.co.in/public/v2/users")
+                .post("https://gorest.co.in/public/v1/users")
                 .then()
                 .log()
                 .body()
-                .statusCode(201);
+                .statusCode(201)
+                .body("data.id", Matchers.notNullValue())
+                .body("data.email",Matchers.equalTo("rahul11@gmail.com"));
     }
 }
