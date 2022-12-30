@@ -1,79 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ApiTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-29T10:41:11" hostname="TestVagrants-MacBook-Pro.local" time="1.472">
+<testsuite name="ApiTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-30T10:14:16" hostname="TestVagrants-MacBook-Pro.local" time="1.624">
   <properties/>
-  <testcase name="getAllUsers" classname="ApiTests" time="1.472"/>
-  <system-out><![CDATA[[
-    {
-        "id": 5048,
-        "name": "Aarya Mishra II",
-        "email": "mishra_ii_aarya@kohler.co",
-        "gender": "male",
-        "status": "active"
-    },
-    {
-        "id": 5046,
-        "name": "Nalini Tandon",
-        "email": "tandon_nalini@jaskolski.biz",
-        "gender": "female",
-        "status": "active"
-    },
-    {
-        "id": 5045,
-        "name": "Anuraag Sinha",
-        "email": "sinha_anuraag@beier-stroman.name",
-        "gender": "male",
-        "status": "inactive"
-    },
-    {
-        "id": 5044,
-        "name": "Saraswati Gandhi",
-        "email": "saraswati_gandhi@maggio.biz",
-        "gender": "male",
-        "status": "inactive"
-    },
-    {
-        "id": 5043,
-        "name": "Jai Chattopadhyay",
-        "email": "chattopadhyay_jai@tillman.io",
-        "gender": "female",
-        "status": "inactive"
-    },
-    {
-        "id": 5042,
-        "name": "Kalpana Arora MD",
-        "email": "kalpana_md_arora@parker.net",
-        "gender": "female",
-        "status": "active"
-    },
-    {
-        "id": 5041,
-        "name": "Giriraj Johar",
-        "email": "giriraj_johar@terry-lebsack.info",
-        "gender": "female",
-        "status": "active"
-    },
-    {
-        "id": 5040,
-        "name": "Dhananjay Guha",
-        "email": "guha_dhananjay@gerhold.co",
-        "gender": "male",
-        "status": "inactive"
-    },
-    {
-        "id": 5039,
-        "name": "Miss Agrata Johar",
-        "email": "johar_miss_agrata@boyer-cremin.co",
-        "gender": "female",
-        "status": "inactive"
-    },
-    {
-        "id": 5038,
-        "name": "Rev. Anang Adiga",
-        "email": "adiga_anang_rev@mitchell.info",
-        "gender": "male",
-        "status": "active"
-    }
-]
+  <testcase name="saveUser" classname="ApiTests" time="1.624"/>
+  <system-out><![CDATA[{
+    "id": 17528,
+    "name": "Jayanthi",
+    "email": "jayanthi@gmail.com",
+    "gender": "female",
+    "status": "active"
+}
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

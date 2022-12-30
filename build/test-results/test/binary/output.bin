@@ -1,72 +1,7 @@
-[
-    {
-        "id": 5048,
-#        "name": "Aarya Mishra II",
-.        "email": "mishra_ii_aarya@kohler.co",
-        "gender": "male",
-        "status": "active"
-    },
-    {
-        "id": 5046,
-!        "name": "Nalini Tandon",
-0        "email": "tandon_nalini@jaskolski.biz",
-        "gender": "female",
-        "status": "active"
-    },
-    {
-        "id": 5045,
-!        "name": "Anuraag Sinha",
-5        "email": "sinha_anuraag@beier-stroman.name",
-        "gender": "male",
-        "status": "inactive"
-    },
-    {
-        "id": 5044,
-$        "name": "Saraswati Gandhi",
-0        "email": "saraswati_gandhi@maggio.biz",
-        "gender": "male",
-        "status": "inactive"
-    },
-    {
-        "id": 5043,
-%        "name": "Jai Chattopadhyay",
-1        "email": "chattopadhyay_jai@tillman.io",
-        "gender": "female",
-        "status": "inactive"
-    },
-    {
-        "id": 5042,
-$        "name": "Kalpana Arora MD",
-0        "email": "kalpana_md_arora@parker.net",
-        "gender": "female",
-        "status": "active"
-    },
-    {
-        "id": 5041,
-!        "name": "Giriraj Johar",
-5        "email": "giriraj_johar@terry-lebsack.info",
-        "gender": "female",
-        "status": "active"
-    },
-    {
-        "id": 5040,
-"        "name": "Dhananjay Guha",
-.        "email": "guha_dhananjay@gerhold.co",
-        "gender": "male",
-        "status": "inactive"
-    },
-    {
-        "id": 5039,
-%        "name": "Miss Agrata Johar",
-6        "email": "johar_miss_agrata@boyer-cremin.co",
-        "gender": "female",
-        "status": "inactive"
-    },
-    {
-        "id": 5038,
-$        "name": "Rev. Anang Adiga",
-2        "email": "adiga_anang_rev@mitchell.info",
-        "gender": "male",
-        "status": "active"
-    }
-]
+{
+    "id": 17528,
+    "name": "Jayanthi",
+#    "email": "jayanthi@gmail.com",
+    "gender": "female",
+    "status": "active"
+}
