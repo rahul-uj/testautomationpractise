@@ -18,15 +18,15 @@ public class ApiTests {
     }
 
     @Test
-    public void saveUser(){
+    public void saveMaleUser(){
         given()
                 .accept(ContentType.JSON)
                 .contentType(ContentType.JSON)
                 .header("Authorization","Bearer f71a00fb0610866efbd24ef6b398a488e1ec69958a34886ad59a9710f7d0729d")
                 .body("{\n" +
                         "    \"id\": 0,\n" +
-                        "    \"name\": \"Rahul\",\n" +
-                        "    \"email\": \"rahul11@gmail.com\",\n" +
+                        "    \"name\": \"Harish\",\n" +
+                        "    \"email\": \"harisha122@gmail.com\",\n" +
                         "    \"gender\": \"male\",\n" +
                         "    \"status\": \"active\"\n" +
                         "}")
@@ -37,6 +37,29 @@ public class ApiTests {
                 .body()
                 .statusCode(201)
                 .body("data.id", Matchers.notNullValue())
-                .body("data.email",Matchers.equalTo("rahul11@gmail.com"));
+                .body("data.email",Matchers.equalTo("harisha122@gmail.com"));
+    }
+
+    @Test
+    public void saveFemaleUser(){
+        given()
+                .accept(ContentType.JSON)
+                .contentType(ContentType.JSON)
+                .header("Authorization","Bearer f71a00fb0610866efbd24ef6b398a488e1ec69958a34886ad59a9710f7d0729d")
+                .body("{\n" +
+                        "    \"id\": 0,\n" +
+                        "    \"name\": \"Gowri\",\n" +
+                        "    \"email\": \"gowri101122@gmail.com\",\n" +
+                        "    \"gender\": \"female\",\n" +
+                        "    \"status\": \"active\"\n" +
+                        "}")
+                .when()
+                .post("https://gorest.co.in/public/v1/users")
+                .then()
+                .log()
+                .body()
+                .statusCode(201)
+                .body("data.id", Matchers.notNullValue())
+                .body("data.email",Matchers.equalTo("gowri101122@gmail.com"));
     }
 }
