@@ -1,3 +1,4 @@
+import Users.UsersClient;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.hamcrest.Matchers;
@@ -16,7 +17,7 @@ public class SaveUserApiTests {
                 "    \"gender\": \"male\",\n" +
                 "    \"status\": \"active\"\n" +
                 "}";
-        createUser(
+        new UsersClient().createUser(
                 body)
                 .then()
                 .log()
@@ -34,7 +35,7 @@ public class SaveUserApiTests {
                 "    \"gender\": \"female\",\n" +
                 "    \"status\": \"active\"\n" +
                 "}";
-        createUser(body)
+        new UsersClient().createUser(body)
                 .then()
                 .log()
                 .body()
@@ -42,15 +43,9 @@ public class SaveUserApiTests {
                 .body("data.id", Matchers.notNullValue())
                 .body("data.email",Matchers.equalTo("olive@gmail.com"));
     }
-    private Response createUser(String body) {
-        return given()
-                .accept(ContentType.JSON)
-                .contentType(ContentType.JSON)
-                .header("Authorization", "Bearer f71a00fb0610866efbd24ef6b398a488e1ec69958a34886ad59a9710f7d0729d")
-                .body(body)
-                .when()
-                .post("https://gorest.co.in/public/v1/users");
-    }
+
+
+
 
 
 }

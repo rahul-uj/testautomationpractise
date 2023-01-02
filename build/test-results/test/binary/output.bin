@@ -1,98 +1,10 @@
 {
-    "meta": {
-        "pagination": {
-            "total": 4395,
-            "pages": 440,
-            "page": 1,
-            "limit": 10,
-            "links": {
-"                "previous": null,
-J                "current": "https://gorest.co.in/public/v1/users?page=1",
-F                "next": "https://gorest.co.in/public/v1/users?page=2"
-            }
-
-        }
-    },
+    "meta": null,
     "data": [
 
         {
-            "id": 4836,
-(            "name": "Dayaanidhi Ahuja",
-7            "email": "ahuja_dayaanidhi@donnelly.name",
-             "gender": "female",
-            "status": "active"
-        },
-
-        {
-            "id": 4834,
-%            "name": "Bhupen Talwar",
-5            "email": "talwar_bhupen@bahringer.info",
-             "gender": "female",
-            "status": "active"
-        },
-
-        {
-            "id": 4833,
-%            "name": "Gangesh Gowda",
-1            "email": "gangesh_gowda@corwin.org",
-             "gender": "female",
-!            "status": "inactive"
-        },
-
-        {
-            "id": 4831,
-!            "name": "Dhana Jha",
-,            "email": "jha_dhana@ledner.co",
-             "gender": "female",
-            "status": "active"
-        },
-
-        {
-            "id": 4830,
-$            "name": "Vidhya Sethi",
-1            "email": "sethi_vidhya@hagenes.biz",
-             "gender": "female",
-            "status": "active"
-        },
-
-        {
-            "id": 4829,
-.            "name": "The Hon. Ahilya Tagore",
-@            "email": "hon_the_ahilya_tagore@runolfsdottir.biz",
-            "gender": "male",
-            "status": "active"
-        },
-
-        {
-            "id": 4828,
-#            "name": "Gautam Gill",
-9            "email": "gautam_gill@altenwerth-koepp.com",
-            "gender": "male",
-            "status": "active"
-        },
-
-        {
-            "id": 4827,
-&            "name": "Atmanand Sinha",
-1            "email": "sinha_atmanand@bednar.co",
-            "gender": "male",
-            "status": "active"
-        },
-
-        {
-            "id": 4826,
-)            "name": "Abani Namboothiri",
-5            "email": "abani_namboothiri@miller.biz",
-            "gender": "male",
-            "status": "active"
-        },
-
-        {
-            "id": 4825,
-"            "name": "Kin Khatri",
-4            "email": "kin_khatri@schaden-adams.io",
-            "gender": "male",
-            "status": "active"
+            "field": "email",
+$            "message": "is invalid"
 
         }
     ]
