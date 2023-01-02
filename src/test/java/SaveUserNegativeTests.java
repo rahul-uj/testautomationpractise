@@ -1,9 +1,16 @@
 import Users.UsersClient;
 import org.hamcrest.Matchers;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class SaveUserNegativeTests {
 
+    private UsersClient usersClient;
+
+    @BeforeClass
+    public void beforeClass(){
+        usersClient = new UsersClient();
+    }
     @Test
     public void shouldNotAllowToCreateUserWithInvalidId(){
         String body = "{\n" +
@@ -14,7 +21,7 @@ public class SaveUserNegativeTests {
                 "    \"status\": \"active\"\n" +
                 "}";
 
-        new UsersClient().createUser(body)
+        usersClient.createUser(body)
                 .then()
                 .log().body()
                 .statusCode(422)

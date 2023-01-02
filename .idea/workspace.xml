@@ -12,16 +12,21 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/GetAllUsersApiTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/GetAllUsersApiTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/SaveUserApiTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/SaveUserApiTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/GetAllUsersApiTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/Users/UsersClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/Users/UsersClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/SaveUserNegativeTests.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-GetAllUsersApiTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-SaveUserNegativeTests.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GetAllUsersApiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GetAllUsersApiTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SaveUserApiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SaveUserApiTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SaveUserNegativeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SaveUserNegativeTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Users/UsersClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Users/UsersClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,8 +93,8 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.SaveUserNegativeTests.shouldNotAllowToCreateUserWithInvalidId">
-    <configuration name="ApiTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.GetAllUsersApiTests">
+    <configuration name="GetAllUsersApiTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -102,7 +107,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ApiTests&quot;" />
+            <option value="&quot;GetAllUsersApiTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -112,7 +117,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ApiTests.saveFemaleUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SaveUserApiTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -125,30 +130,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ApiTests.saveFemaleUser&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="GetAllUsersApiTests.getAllUsers" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;GetAllUsersApiTests.getAllUsers&quot;" />
+            <option value="&quot;SaveUserApiTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -172,6 +154,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;SaveUserApiTests.shouldNotAllowToCreateUserWithInvalidId&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SaveUserNegativeTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;SaveUserNegativeTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -206,11 +211,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GetAllUsersApiTests" />
+        <item itemvalue="Gradle.SaveUserNegativeTests" />
+        <item itemvalue="Gradle.SaveUserApiTests" />
         <item itemvalue="Gradle.SaveUserNegativeTests.shouldNotAllowToCreateUserWithInvalidId" />
         <item itemvalue="Gradle.SaveUserApiTests.shouldNotAllowToCreateUserWithInvalidId" />
-        <item itemvalue="Gradle.GetAllUsersApiTests.getAllUsers" />
-        <item itemvalue="Gradle.ApiTests.saveFemaleUser" />
-        <item itemvalue="Gradle.ApiTests" />
       </list>
     </recent_temporary>
   </component>

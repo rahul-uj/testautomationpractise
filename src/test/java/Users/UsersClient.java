@@ -16,4 +16,11 @@ public class UsersClient {
                 .when()
                 .post("https://gorest.co.in/public/v1/users");
     }
+
+    public Response getUsers() {
+        return given()
+                .when()
+                .get("https://gorest.co.in/public/v1/users");
+    }
+
 }
