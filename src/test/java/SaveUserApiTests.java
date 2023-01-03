@@ -1,13 +1,11 @@
 import Users.UsersClient;
-import io.restassured.http.ContentType;
-import io.restassured.response.Response;
+import Users.create.CreateUserRequestBody;
 import org.hamcrest.Matchers;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.util.UUID;
 
-import static io.restassured.RestAssured.given;
 
 public class SaveUserApiTests {
 
@@ -22,15 +20,13 @@ public class SaveUserApiTests {
     public void saveMaleUser(){
 
         String email = String.format("%s@gmail.com", UUID.randomUUID());
-        String body = String.format("{\n" +
-                "    \"id\": 0,\n" +
-                "    \"name\": \"Poopye\",\n" +
-                "    \"email\": \"%s\",\n" +
-                "    \"gender\": \"male\",\n" +
-                "    \"status\": \"active\"\n" +
-                "}",email);
+        String name = "Poopye";
+        String status = "active";
+        String gender = "male";
+
+        CreateUserRequestBody requestBody = new CreateUserRequestBody(name, email, gender, status);
         usersClient.createUser(
-                body)
+                requestBody)
                 .then()
                 .log()
                 .body()
@@ -42,14 +38,13 @@ public class SaveUserApiTests {
     public void saveFemaleUser(){
 
         String email = String.format("%s@gmail.com",UUID.randomUUID());
-        String body = String.format("{\n" +
-                "    \"id\": 0,\n" +
-                "    \"name\": \"Olive\",\n" +
-                "    \"email\": \"%s\",\n" +
-                "    \"gender\": \"female\",\n" +
-                "    \"status\": \"active\"\n" +
-                "}",email);
-        usersClient.createUser(body)
+        String name = "Olive";
+        String gender = "female";
+        String status = "active";
+
+
+        CreateUserRequestBody requestBody = new CreateUserRequestBody(name, email, gender, status);
+        usersClient.createUser(requestBody)
                 .then()
                 .log()
                 .body()

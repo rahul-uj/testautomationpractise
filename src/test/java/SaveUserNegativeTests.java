@@ -1,4 +1,5 @@
 import Users.UsersClient;
+import Users.create.CreateUserRequestBody;
 import org.hamcrest.Matchers;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -13,15 +14,13 @@ public class SaveUserNegativeTests {
     }
     @Test
     public void shouldNotAllowToCreateUserWithInvalidId(){
-        String body = "{\n" +
-                "    \"id\": 0,\n" +
-                "    \"name\": \"Mahesh\",\n" +
-                "    \"email\": \"Mahigmail.com\",\n" +
-                "    \"gender\": \"male\",\n" +
-                "    \"status\": \"active\"\n" +
-                "}";
+        String name = "Mahesh";
+        String email = "Mahigmail.com";
+        String gender = "male";
+        String status = "active";
 
-        usersClient.createUser(body)
+        CreateUserRequestBody requestBody = new CreateUserRequestBody(name, email, gender, status);
+        usersClient.createUser(requestBody)
                 .then()
                 .log().body()
                 .statusCode(422)

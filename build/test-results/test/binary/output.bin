@@ -1,98 +1,10 @@
 {
-    "meta": {
-        "pagination": {
-            "total": 4387,
-            "pages": 439,
-            "page": 1,
-            "limit": 10,
-            "links": {
-"                "previous": null,
-J                "current": "https://gorest.co.in/public/v1/users?page=1",
-F                "next": "https://gorest.co.in/public/v1/users?page=2"
-            }
-
-        }
-    },
+    "meta": null,
     "data": [
 
         {
-            "id": 4831,
-!            "name": "Dhana Jha",
-,            "email": "jha_dhana@ledner.co",
-             "gender": "female",
-            "status": "active"
-        },
-
-        {
-            "id": 4829,
-.            "name": "The Hon. Ahilya Tagore",
-@            "email": "hon_the_ahilya_tagore@runolfsdottir.biz",
-            "gender": "male",
-            "status": "active"
-        },
-
-        {
-            "id": 4828,
-#            "name": "Gautam Gill",
-9            "email": "gautam_gill@altenwerth-koepp.com",
-            "gender": "male",
-            "status": "active"
-        },
-
-        {
-            "id": 4827,
-&            "name": "Atmanand Sinha",
-1            "email": "sinha_atmanand@bednar.co",
-            "gender": "male",
-            "status": "active"
-        },
-
-        {
-            "id": 4826,
-)            "name": "Abani Namboothiri",
-5            "email": "abani_namboothiri@miller.biz",
-            "gender": "male",
-            "status": "active"
-        },
-
-        {
-            "id": 4825,
-"            "name": "Kin Khatri",
-4            "email": "kin_khatri@schaden-adams.io",
-            "gender": "male",
-            "status": "active"
-        },
-
-        {
-            "id": 4823,
-%            "name": "Jagdish Patel",
-2            "email": "patel_jagdish@ziemann.com",
-            "gender": "male",
-            "status": "active"
-        },
-
-        {
-            "id": 4821,
-'            "name": "Meenakshi Adiga",
-3            "email": "meenakshi_adiga@howell.com",
-            "gender": "male",
-!            "status": "inactive"
-        },
-
-        {
-            "id": 4820,
-(            "name": "Chandraketu Bhat",
-8            "email": "chandraketu_bhat@langworth.name",
-            "gender": "male",
-!            "status": "inactive"
-        },
-
-        {
-            "id": 4819,
-#            "name": "Chetan Gill",
-2            "email": "chetan_gill@johns-dare.io",
-             "gender": "female",
-!            "status": "inactive"
+            "field": "email",
+$            "message": "is invalid"
 
         }
     ]
