@@ -1,9 +1,8 @@
-package Users.create;
+package user.create;
 
 import lombok.*;
 
 @Data
-@Setter
 @Getter
 @Builder
 

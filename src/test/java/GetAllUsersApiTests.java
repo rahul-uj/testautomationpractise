@@ -1,5 +1,4 @@
-import Users.UsersClient;
-import io.restassured.response.Response;
+import user.UsersClient;
 import org.hamcrest.Matchers;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;

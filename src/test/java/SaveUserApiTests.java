@@ -1,10 +1,14 @@
-import Users.UsersClient;
-import Users.create.CreateUserRequestBody;
+import org.testng.Assert;
+import user.UsersClient;
+import user.create.CreateUserRequestBody;
 import org.hamcrest.Matchers;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import user.create.response.CreateUserResponse;
 
 import java.util.UUID;
+
+import static org.testng.Assert.*;
 
 
 public class SaveUserApiTests {
@@ -23,14 +27,10 @@ public class SaveUserApiTests {
 
         CreateUserRequestBody requestBody =  CreateUserRequestBody.builder()
                 .name("Poopye").gender("male").email(email).status("active").build();
-        usersClient.createUser(
-                requestBody)
-                .then()
-                .log()
-                .body()
-                .statusCode(201)
-                .body("data.id", Matchers.notNullValue())
-                .body("data.email",Matchers.equalTo(email));
+        CreateUserResponse createUserResponse = usersClient.createUser(requestBody);
+        assertEquals(createUserResponse.getStatuscode(),201);
+        assertNotNull(createUserResponse.getData().getId());
+        assertEquals(createUserResponse.getData().getEmail(),requestBody.getEmail());
     }
     @Test
     public void saveFemaleUser(){
@@ -39,12 +39,10 @@ public class SaveUserApiTests {
 
         CreateUserRequestBody requestBody =  CreateUserRequestBody.builder()
                 .name("Olive").gender("female").email(email).status("active").build();
-        usersClient.createUser(requestBody)
-                .then()
-                .log()
-                .body()
-                .statusCode(201)
-                .body("data.id", Matchers.notNullValue())
-                .body("data.email",Matchers.equalTo(email));
+        CreateUserResponse createUserResponse = usersClient.createUser(requestBody);
+        assertEquals(createUserResponse.getStatuscode(),201);
+        assertNotNull(createUserResponse.getData().getId());
+        assertEquals(createUserResponse.getData().getEmail(),requestBody.getEmail());
+
     }
 }
