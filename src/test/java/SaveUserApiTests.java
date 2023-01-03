@@ -20,11 +20,9 @@ public class SaveUserApiTests {
     public void saveMaleUser(){
 
         String email = String.format("%s@gmail.com", UUID.randomUUID());
-        String name = "Poopye";
-        String status = "active";
-        String gender = "male";
 
-        CreateUserRequestBody requestBody = new CreateUserRequestBody(name, email, gender, status);
+        CreateUserRequestBody requestBody =  CreateUserRequestBody.builder()
+                .name("Poopye").gender("male").email(email).status("active").build();
         usersClient.createUser(
                 requestBody)
                 .then()
@@ -38,12 +36,9 @@ public class SaveUserApiTests {
     public void saveFemaleUser(){
 
         String email = String.format("%s@gmail.com",UUID.randomUUID());
-        String name = "Olive";
-        String gender = "female";
-        String status = "active";
 
-
-        CreateUserRequestBody requestBody = new CreateUserRequestBody(name, email, gender, status);
+        CreateUserRequestBody requestBody =  CreateUserRequestBody.builder()
+                .name("Olive").gender("female").email(email).status("active").build();
         usersClient.createUser(requestBody)
                 .then()
                 .log()
@@ -52,9 +47,4 @@ public class SaveUserApiTests {
                 .body("data.id", Matchers.notNullValue())
                 .body("data.email",Matchers.equalTo(email));
     }
-
-
-
-
-
 }

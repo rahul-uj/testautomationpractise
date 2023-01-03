@@ -14,12 +14,9 @@ public class SaveUserNegativeTests {
     }
     @Test
     public void shouldNotAllowToCreateUserWithInvalidId(){
-        String name = "Mahesh";
-        String email = "Mahigmail.com";
-        String gender = "male";
-        String status = "active";
 
-        CreateUserRequestBody requestBody = new CreateUserRequestBody(name, email, gender, status);
+        CreateUserRequestBody requestBody =  CreateUserRequestBody.builder()
+                .name("Mahesh").gender("male").email("Mahigmail.com").status("active").build();
         usersClient.createUser(requestBody)
                 .then()
                 .log().body()

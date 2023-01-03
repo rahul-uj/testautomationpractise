@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SaveUserNegativeTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-01-03T06:20:25" hostname="TestVagrants-MacBook-Pro.local" time="1.785">
+<testsuite name="SaveUserNegativeTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-01-03T06:56:06" hostname="TestVagrants-MacBook-Pro.local" time="1.939">
   <properties/>
-  <testcase name="shouldNotAllowToCreateUserWithInvalidId" classname="SaveUserNegativeTests" time="1.785"/>
+  <testcase name="shouldNotAllowToCreateUserWithInvalidId" classname="SaveUserNegativeTests" time="1.939"/>
   <system-out><![CDATA[{
     "meta": null,
     "data": [
