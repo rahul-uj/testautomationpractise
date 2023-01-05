@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SaveUserApiTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-01-05T10:32:02" hostname="TestVagrants-MacBook-Pro.local" time="1.892">
+  <properties/>
+  <testcase name="saveFemaleUser" classname="SaveUserApiTests" time="1.892"/>
+  <system-out><![CDATA[{
+    "meta": null,
+    "data": {
+        "id": 32979,
+        "name": "Olive",
+        "email": "721c0599-df83-4971-af2e-a8cf871dfc1e@gmail.com",
+        "gender": "female",
+        "status": "active"
+    }
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

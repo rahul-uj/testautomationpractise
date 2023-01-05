@@ -28,9 +28,7 @@ public class SaveUserApiTests {
         CreateUserRequestBody requestBody =  CreateUserRequestBody.builder()
                 .name("Poopye").gender("male").email(email).status("active").build();
         CreateUserResponse createUserResponse = usersClient.createUser(requestBody);
-        assertEquals(createUserResponse.getStatuscode(),201);
-        assertNotNull(createUserResponse.getData().getId());
-        assertEquals(createUserResponse.getData().getEmail(),requestBody.getEmail());
+        createUserResponse.assertUser(requestBody);
     }
     @Test
     public void saveFemaleUser(){
@@ -40,9 +38,6 @@ public class SaveUserApiTests {
         CreateUserRequestBody requestBody =  CreateUserRequestBody.builder()
                 .name("Olive").gender("female").email(email).status("active").build();
         CreateUserResponse createUserResponse = usersClient.createUser(requestBody);
-        assertEquals(createUserResponse.getStatuscode(),201);
-        assertNotNull(createUserResponse.getData().getId());
-        assertEquals(createUserResponse.getData().getEmail(),requestBody.getEmail());
-
+        createUserResponse.assertUser(requestBody);
     }
 }

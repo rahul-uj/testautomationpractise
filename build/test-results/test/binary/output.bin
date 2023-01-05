@@ -1,11 +1,10 @@
 {
     "meta": null,
-    "data": [
-
-        {
-            "field": "email",
-$            "message": "is invalid"
-
-        }
-    ]
+    "data": {
+        "id": 32979,
+        "name": "Olive",
+C        "email": "721c0599-df83-4971-af2e-a8cf871dfc1e@gmail.com",
+        "gender": "female",
+        "status": "active"
+    }
 }
