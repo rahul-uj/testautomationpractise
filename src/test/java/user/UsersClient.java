@@ -3,6 +3,7 @@ package user;
 import user.create.CreateUserRequestBody;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import user.create.response.CreateUserErrorResponse;
 import user.create.response.CreateUserResponse;
 
 import static io.restassured.RestAssured.given;
@@ -16,6 +17,12 @@ public class UsersClient {
         return createUserResponse;
     }
 
+    public CreateUserErrorResponse createUserExpectingResponse(CreateUserRequestBody requestBody) {
+        Response response = create(requestBody);
+        CreateUserErrorResponse errorResponse = response.as(CreateUserErrorResponse.class);
+        errorResponse.setStatusCode(response.statusCode());
+        return errorResponse;
+    }
     public Response create(CreateUserRequestBody body) {
         Response response = given().accept(ContentType.JSON)
                 .contentType(ContentType.JSON)

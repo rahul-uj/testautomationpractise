@@ -1,8 +1,10 @@
+import org.testng.Assert;
 import user.UsersClient;
 import user.create.CreateUserRequestBody;
 import org.hamcrest.Matchers;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import user.create.response.CreateUserErrorResponse;
 
 public class SaveUserNegativeTests {
 
@@ -17,12 +19,11 @@ public class SaveUserNegativeTests {
     public void shouldNotAllowToCreateUserWithInvalidId() {
 
         CreateUserRequestBody requestBody = CreateUserRequestBody.builder()
-                .name("Mahesh").gender("male").email("Mahigmail.com").status("active").build();
-        usersClient.create(requestBody)
-                .then()
-                    .statusCode(422)
-                    .body("data", Matchers.hasItem(Matchers.hasEntry("field", "email")))
-                    .body("data", Matchers.hasItem(Matchers.hasEntry("message", "is invalid")));
+                .name("Mahesh").gender("male").email("Mahi.gmail.com").status("active").build();
+
+        CreateUserErrorResponse errorResponse = usersClient.createUserExpectingResponse(requestBody);
+        Assert.assertEquals(errorResponse.getStatusCode(),422);
+        errorResponse.assertHasError("email","is invalid");
 
     }
 }

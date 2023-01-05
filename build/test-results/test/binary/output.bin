@@ -1,20 +1,11 @@
 {
     "meta": null,
-    "data": {
-        "id": 28544,
-        "name": "Olive",
-C        "email": "38e56f27-a0c1-4cbc-b362-441b121c7638@gmail.com",
-        "gender": "female",
-        "status": "active"
-    }
+    "data": [
+
+        {
+            "field": "email",
+$            "message": "is invalid"
+
+        }
+    ]
 }
-{
-    "meta": null,
-    "data": {
-        "id": 28545,
-        "name": "Poopye",
-C        "email": "f7750b56-ef5f-4376-81e9-58d03de5742a@gmail.com",
-        "gender": "male",
-        "status": "active"
-    }
-}

@@ -5,12 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="786f7a6e-3b44-4613-98c3-7929946c1fbf" name="Changes" comment="Initial Commit">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GetAllUsersApiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GetAllUsersApiTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SaveUserApiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SaveUserApiTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/SaveUserNegativeTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/SaveUserNegativeTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/user/UsersClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/user/UsersClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/SaveUserApiTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-SaveUserApiTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SaveUserNegativeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SaveUserNegativeTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Users/UsersClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/UsersClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Users/create/CreateUserRequestBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/create/CreateUserRequestBody.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/user/UsersClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/UsersClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,8 +210,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.SaveUserNegativeTests.shouldNotAllowToCreateUserWithInvalidId" />
-        <item itemvalue="Gradle.SaveUserApiTests" />
         <item itemvalue="Gradle.SaveUserNegativeTests" />
+        <item itemvalue="Gradle.SaveUserApiTests" />
         <item itemvalue="Gradle.GetAllUsersApiTests" />
         <item itemvalue="Gradle.SaveUserApiTests.shouldNotAllowToCreateUserWithInvalidId" />
       </list>
@@ -225,6 +239,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/user/create/response/CreateUserErrorResponse.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
